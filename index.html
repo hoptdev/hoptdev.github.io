@@ -6,7 +6,7 @@
 <head>
     <meta charset="UTF-8">
     <title>python-telegram-bot Example WebApp</title>
-    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <script src="tg.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@jaames/iro@5"></script>
 </head>
 <script type="text/javascript">
@@ -23,7 +23,6 @@
     Telegram.WebApp.MainButton.setText('Choose Color').show().onClick(function () {
         const data = JSON.stringify({hex: colorPicker.color.hexString, rgb: colorPicker.color.rgb});
         Telegram.WebApp.sendData(data);
-        Telegram.WebApp.close();
     });
 </script>
 <body style="background-color: #ffffff">
